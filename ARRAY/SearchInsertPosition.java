@@ -1,0 +1,28 @@
+//leetcode problem no.35
+
+class SearchInsertPOsition {
+    public static int searchInsert(int[] nums, int target) {
+        int si=0,ei=nums.length-1;
+
+        while (si<=ei){
+            int mid = si +(ei-si)/2;
+
+            if(nums[mid]< target ){
+                si= mid+1;
+            }else{
+                ei= mid-1;
+            }
+        }
+        return si;
+        
+        
+    }
+    
+    public static void main (String[]args){
+        int nums[]={1,3,5,7};
+
+        int target=2;
+
+        System.out.println(searchInsert(nums,target));
+    }
+}
