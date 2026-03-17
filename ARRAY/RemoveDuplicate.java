@@ -1,15 +1,23 @@
 public class RemoveDuplicate {
 
     public static int removeDuplicate(int nums[]){
-         for(int i=0;i < nums.length-1;i++){
-            for (int j = i+1; j<nums.length;j++){
-                if (nums[i]==nums[j]) {
-                    System.out.print(nums[i]);
-                }else{
-                    System.out.print(nums[j]);
-                }
+        int k=1;
+         for(int i=1;i < nums.length;i++){
+            if (nums[i]!=nums[i-1]){
+                nums [k]=nums[i];
+                k++;
             }
-        }return 1;
+        }return k;
+    }
+
+    public static void main(String[] args) {
+        int nums[]={1,1,2,2,2,3,4,7,8};
+
+       int uniqeCount=removeDuplicate(nums);
+
+       for(int i=0;i<uniqeCount;i++){
+                System.out.print(nums[i]+", ");
+                }
     }
     
 }
