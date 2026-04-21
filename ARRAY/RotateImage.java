@@ -1,5 +1,5 @@
 public class RotateImage{
-    public
+    public static
     public static void main(String[] args) {
         
     }
