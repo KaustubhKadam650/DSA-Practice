@@ -18,7 +18,7 @@ public class PowernOfX {
     }
      public static void main(String[] args) {
         int x =2;
-        int n=5;
+        int n=-2;
 
         System.out.println("Answer is "+power(x, n));
      }
