@@ -20,6 +20,6 @@ public class PowernOfX {
         int x =2;
         int n=-2;
 
-        System.out.println("Answer is "+power(x, n));
+        System.out.println("Answer is= "+power(x, n));
      }
 }
