@@ -7,7 +7,7 @@ public class PowernOfX {
             return 1;
             
         }
-        //recursion
+        //  recursion
         int halfPower = power(x,n/2);
         int halfPowerSq = halfPower * halfPower;
 
