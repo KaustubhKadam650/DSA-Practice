@@ -12,14 +12,14 @@ public class PowernOfX {
         int halfPowerSq = halfPower * halfPower;
 
         if (n%2 !=0) {
-            halfPowerSq= x * halfPowerSq;
+            halfPowerSq = x * halfPowerSq;
         }
         return halfPowerSq;
 
     }
      public static void main(String[] args) {
-        int x =2;
-        int n=-2;
+        int x = 2 ;
+        int n = -2 ;
 
         System.out.println("Answer is =  "+power(x, n));
      }
