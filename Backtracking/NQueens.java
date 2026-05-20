@@ -11,7 +11,7 @@ public class NQueens {
             if (isSafe(board,row,j)) {
                 board[row][j] = 'Q';
                 nQueens(board, row+1);//function
-                board[row][j] = 'X'; //backtracking step
+                board[row][j] = '.'; //backtracking step
                 
             }
         }
@@ -52,12 +52,12 @@ public class NQueens {
         
     }
     public static void main(String[] args) {
-        int n=5;
+        int n=8;
         char board[][]= new char [n][n];
         //initialize
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                board[i][j]='x';
+                board[i][j]='.';
             }
         }
         nQueens(board,0);
