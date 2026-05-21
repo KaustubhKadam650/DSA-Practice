@@ -23,7 +23,7 @@ public class ContainsDuplicate {
         return false;
     }
 
-
+    //in this above solution takes less time as we have use sorting ,so it can arrange duplicate element 1 after 1,bcs of this it takes less time
 
     public static void main(String[] args) {
         int nums[] = { 1, 2, 1, 3, 4 };
