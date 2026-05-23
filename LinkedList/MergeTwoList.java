@@ -28,7 +28,7 @@ public class MergeTwoList {
         head1.next.next = new Node(15);
         head1.next.next.next = new Node(40);
 
-        Node head2 = new Node(2);
+       ListNode head2 = new Node(2);
         head2.next = new Node(3);
         head2.next.next = new Node(20);
     }
