@@ -58,7 +58,7 @@ public class MergeTwoList {
         ListNode result = obj.mergeTwoLists(list1, list2);
 
         // Print merged list
-        System.out.println("Merged List:");
+        System.out.println("Merged  List:");
         printList(result);
     }
 }
