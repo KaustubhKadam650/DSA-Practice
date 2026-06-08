@@ -20,7 +20,7 @@ public class NQueens {
     public static boolean isSafe(char board[][],int row,int col){
         //vertical up
         for(int i=row-1;i>=0;i--){
-            if (board[i][col]=='Q') {
+            if (board[i][col]= ='Q') {
                 return false;
             }
         }
@@ -33,7 +33,7 @@ public class NQueens {
 
         //diagonal right up
         for(int i=row-1,j=col+1;i>=0 && j<board.length;i--,j++){
-            if (board[i] [j]=='Q') {
+            if (board[i][j]=='Q') {
                 return false;
             } 
         }
