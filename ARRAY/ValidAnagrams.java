@@ -9,7 +9,7 @@ public class ValidAnagrams {
             freq [t.charAt(i) - 'a']--;
         }
 
-        for(int i= 0; i< freq.length; i++){
+        for(int i= 0; i < freq.length;  i++){
             if(freq[i] != 0) return false;
         }
 
