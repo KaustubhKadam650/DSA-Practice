@@ -1,4 +1,4 @@
-
+import java.util.*;
 
 public class ActivitySelection {
     public static void main(String[] args) {
@@ -13,7 +13,10 @@ public class ActivitySelection {
             activities[i][2] = end[i];
         }
 
-        
+        //lamda function -> shortform
+        Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
+
+        //end time basis sort
     }
     
 } 
